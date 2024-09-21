@@ -1,8 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60dvw;
+    height: 70dvh;
+}
+
 #container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 480px;
-    height: 480px;
+    overflow: hidden;
+    width: 600px;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
     border: solid black 1px;
+}
+
+.gridSquare{
+    height: 30px; 
+    width: 35px;
+    margin: 0px;
+    padding: 0px;
+    border: orange solid 1px; margin: 0px;
+    flex: 1 1 auto;
 }
