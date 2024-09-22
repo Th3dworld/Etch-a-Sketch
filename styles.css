@@ -2,8 +2,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60dvw;
-    height: 70dvh;
+    width: 100dvw;
+    height: 100dvh;
+
 }
 
 #container {
@@ -26,3 +27,4 @@ body {
     border: orange solid 1px; margin: 0px;
     flex: 1 1 auto;
 }
+
