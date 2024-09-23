@@ -26,13 +26,6 @@ function addGrids(gridSize){
         grid.addEventListener("mouseover", () => {
             grid.setAttribute("style", "background-color:#30F2F2;")
         });
-        grid.addEventListener('mouseleave', () => {
-            setTimeout(() => {
-                grid.setAttribute("style", `background-color:white;`)
-            },
-            250);
-    
-        });
     });
 }
 
@@ -40,7 +33,12 @@ function addGrids(gridSize){
 let dimensions = 16;//Variable used to set dimensions initialized at 16
  
 changeGridBtn.addEventListener("click", ()=>{
-    dimensions = parseInt(prompt("How many squared do you want per side?"))
+    dimensions = parseInt(prompt("How many squares do you want per side?"))
+
+    //
+    while(dimensions > 100 || dimensions <= 0){
+        dimensions = parseInt(prompt("ERROR!\nYou can only have between 1-100 squares per side.\nPlease input a correct value:"));
+    }
     addGrids(dimensions);
 });
 
