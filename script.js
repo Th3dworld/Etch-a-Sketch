@@ -34,9 +34,9 @@ let dimensions = 16;//Variable used to set dimensions initialized at 16
  
 changeGridBtn.addEventListener("click", ()=>{
     dimensions = parseInt(prompt("How many squares do you want per side?"))
-
+    console.log(dimensions);
     //
-    while(dimensions > 100 || dimensions <= 0){
+    while(dimensions > 100 || dimensions <= 0 || !dimensions){
         dimensions = parseInt(prompt("ERROR!\nYou can only have between 1-100 squares per side.\nPlease input a correct value:"));
     }
     addGrids(dimensions);
